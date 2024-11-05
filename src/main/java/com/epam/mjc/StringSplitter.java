@@ -15,7 +15,7 @@ public class StringSplitter {
      * @return List of substrings
      */
     public List<String> splitByDelimiters(String source, Collection<String> delimiters) {
-        String[] sourceArr = source.split(Arrays.toString(delimiters.toArray()));
+        String[] sourceArr = source.split(Arrays.toString(delimiters.toArray()), 0);
         return new ArrayList<>(Arrays.asList(sourceArr));
     }
 }
